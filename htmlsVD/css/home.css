@@ -32,10 +32,12 @@ body{
 	position: relative;
 }
 .feed-home #feed-dd2{
-	height: 200px;
-	background: green;
+	padding: 14px 30px;
 	display: none;
 	position: relative;
+}
+#feed-dd2 .row{
+	margin-bottom: 60px;
 }
 .feed-home .feed-btn-container{
 	text-align: center;
