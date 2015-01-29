@@ -1,0 +1,29 @@
+body{
+	background: none;
+}
+.feed-home{
+}
+.feed-home nav{
+	background-color: #f7f7f9;
+}
+.feed-home .grid-container{
+	padding: 0 30px;
+}
+.feed-home .feed-nav{
+	margin: 0;
+	padding: 0;
+}
+.feed-home .feed-nav li{
+	width: 49%;
+}
+#app{
+	height: 100%;
+	background:linear-gradient(to top,#3E4017 0,rgba(62,62,62,.62) 100%)
+
+}
+.feed-home #app .btn{
+	margin: 10px 0;
+	width: 100%;
+	background-color: #0FFDCC;
+	border-color: #0FFDF3;
+}

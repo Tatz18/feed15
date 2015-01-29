@@ -1,0 +1,78 @@
+<html>
+	<head>
+        <title>Complete mobile webapp to follow our best players this world cup</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="feed15">
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta name="description" content="Complete mobile webapp to follow our best players this world cup">
+        <meta name="keywords" content="cricket,world cup,2015,sapient,web development,sports">
+
+        <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/home.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+        <script src="http://fb.me/react-0.12.2.js"></script>
+  		<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/react/main.js"></script>
+
+        <script type="text/jsx">
+		    /*** @jsx React.DOM */
+		    var APP = React.createClass({
+		    	getInitialState:function(){
+		            return {
+		            	data:[{'userId':'12','userName':'Sachin'},{'userId':'122','userName':'Virat'},{'userId':'312','userName':'Kumble'},{'userId':'212','userName':'yogoslovakia'}]
+		            }
+		        },
+		        render:function(){
+		        	var createMap = this.state.data.map(function(i){
+		        		return (
+		        				<Widget  data={i.userName} />
+		        			)
+		        	});
+		            return (
+		                        <div className="grid-container">
+		                        	{createMap}
+		                        </div>
+		                )
+		        }
+		    });
+
+		    var Widget = React.createClass({
+		        render:function(){
+		            return (
+		                            <button type="button" className="btn btn-default">{this.props.data}</button>
+		                )
+		        }
+		    })
+
+		    React.renderComponent(
+		        <APP />,
+		        document.getElementById('app')
+		        );
+		</script>
+       
+    </head>
+    <body>
+    	<div class="feed-home">
+	    	<nav>
+	    		<ul class="feed-nav">
+				  <li class="btn btn-default"><a href="#">Search</a></li>
+				  <li class="btn btn-default"><a href="#">Filter By</a></li>
+				</ul>
+	    	</nav>
+	    	<div id="app"></div>
+    	</div>
+    </body>
+</html>
