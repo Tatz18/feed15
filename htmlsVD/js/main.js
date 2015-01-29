@@ -7,6 +7,7 @@ var HomePageControls = {
 		});
 		$(document).click(function(){
 			HomePageControls.hideDropDown();
+			$('.feed-nav').slideDown();
 
 		});
 		$('#feed-dd1,#feed-dd2').click(function(e){
