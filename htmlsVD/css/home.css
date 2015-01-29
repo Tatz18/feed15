@@ -17,7 +17,7 @@ body{
 .feed-home{
 }
 .feed-home nav{
-	background-color: #f7f7f9;
+	
 }
 .feed-home .grid-container{
 	padding: 0 30px;
@@ -25,6 +25,28 @@ body{
 .feed-home .feed-nav{
 	margin: 0;
 	padding: 0;
+}
+.feed-home #feed-dd1{
+	height: 85px;
+	display: none;
+	position: relative;
+}
+.feed-home #feed-dd2{
+	height: 200px;
+	background: green;
+	display: none;
+	position: relative;
+}
+.feed-home .feed-btn-container{
+	text-align: center;
+}
+.feed-home #feed-dd2 .feed-btn-container button,.feed-home #feed-dd1 .feed-btn-container button{
+	position: absolute;
+	bottom: 10px;
+}
+#feed-dd1 .row{
+	margin: 10px 0 20px 0;
+	padding: 0 20px;
 }
 .feed-home .feed-nav li{
 	width: 50%;

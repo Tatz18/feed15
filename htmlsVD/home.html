@@ -68,9 +68,29 @@
     	<div class="feed-home">
 	    	<nav>
 	    		<ul class="feed-nav clearfix">
-				  <li class="btn btn-default"><a href="#">Search</a></li>
-				  <li class="btn btn-default"><a href="#">Filter By</a></li>
+				  <li class="btn btn-default" id="feed-search"><a href="#">Search</a></li>
+				  <li class="btn btn-default" id="feed-filter"><a href="#">Filter By</a></li>
 				</ul>
+				<div class="feed-hidden" data-role="search" id="feed-dd1">
+					<div class="row clearfix">
+					  <div class="col-lg-12">
+					    <div class="input-group">
+					      <input type="text" class="form-control" placeholder="Search for...">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Go!</button>
+					      </span>
+					    </div><!-- /input-group -->
+					  </div><!-- /.col-lg-6 -->
+					</div>
+					<div class="feed-btn-container">
+						<button class="feed-back-btn btn btn-default">Menu</button>
+					</div>
+				</div>
+				<div class="feed-hidden" data-role="filter" id="feed-dd2">
+					<div class="feed-btn-container">
+						<button class="feed-back-btn btn btn-default">Menu</button>
+					</div>
+				</div>
 	    	</nav>
 	    	<div id="app"></div>
     	</div>
