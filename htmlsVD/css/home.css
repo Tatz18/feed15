@@ -1,3 +1,16 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 body{
 	background: none;
 }
@@ -14,7 +27,12 @@ body{
 	padding: 0;
 }
 .feed-home .feed-nav li{
-	width: 49%;
+	width: 50%;
+	float: left;
+	display: block;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 }
 #app{
 	height: 100%;
