@@ -66,6 +66,5 @@ body{
 .feed-home #app .btn{
 	margin: 10px 0;
 	width: 100%;
-	background-color: #0FFDCC;
-	border-color: #0FFDF3;
+	border-color: #ccc;
 }
